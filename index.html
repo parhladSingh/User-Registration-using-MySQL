@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="txt">Registration Form</h1>
+      <form action="signup.php" method="post">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="Username" required />
+        </div>
+        <div class="form-group">
+          <fieldset>
+            <legend>Gender:</legend>
+            Male<input type="radio" name="gender" value="Male" required>
+            Female<input type="radio" name="gender" value="female" required>
+          </fieldset>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="Email" value="" required />
+        </div>
+  
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="Password" value="" required />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Sign Up" />
+        </div>
+      </form>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
